@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: yuehingyupipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yuehingyupipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: yuehingyupipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: yuehingyupipelinesjavascriptdocker 
+          image: yycontainerregistry2022.azurecr.io/yuehingyupipelinesjavascriptdocker
+          ports:
+          - containerPort: 80
