@@ -16,4 +16,4 @@ spec:
         - name: yuehingyupipelinesjavascriptdocker 
           image: yycontainerregistry2022.azurecr.io/yuehingyupipelinesjavascriptdocker
           ports:
-          - containerPort: 80
+          - containerPort: 8080
